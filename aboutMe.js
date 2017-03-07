@@ -1,7 +1,7 @@
 
 var middleName = prompt('Can you guess my middle name') {
 } if (middleName === 'Clifford') {
-    alert('Wow, you guessed my middle name.');
+    alert('Wow, you guessed that my middle name is Cliffor.');
     console.log(middleName);
 } else {}
     alert('Sorry, my middle name is actually Clifford.');
