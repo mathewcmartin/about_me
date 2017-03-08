@@ -1,0 +1,9 @@
+font-family: Verdana, Geramond;
+p.background-color:#BCD2EE;
+margin:auto;
+text-align:left;
+a:hover {
+  color: #cc0000;
+  font-weight: bold;
+  text-decoration: inherit;
+}
