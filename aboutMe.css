@@ -1,9 +1,12 @@
-body.font-family: Geramond;
-p.background-color:#BCD2EE;
-margin:auto;
-text-align:left;
-a:hover {
-  color: #cc0000;
-  font-weight: bold;
-  text-decoration: inherit;
+body {
+  font-family: sans-serif;
 }
+p {
+  font-family: sans-serif;
+  margin-left: auto;
+  text-align: left;
+  }
+ul {
+  font-family: sans-serif;
+  background-color: inherit;
+  }
