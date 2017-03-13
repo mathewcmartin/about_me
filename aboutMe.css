@@ -7,7 +7,7 @@ h1 {
 }
 body {
   font-family: Cambria;
-  display: float;
+  display: block;
   margin-left: 5%;
   margin-right: 5%;
   font-size: 1.5vw;
@@ -19,12 +19,12 @@ p.bdy {
   text-align: left;
 }
 img {
-  max-width: 10%;
+  max-width: 15%;
   display: block;
   position: relative;
 }
 ul {
-  display: float;
+  display: block;
   background-color: inherit;
   position: relative;
   }
