@@ -51,12 +51,13 @@ for (var i = 1; i < 4; i++) {
     var guessNumber = prompt('Please guess a number.');
     alert(failedAttempts + ' was guessed already');
     continue;
-} if (guessNumber === computerChoice) {
-  alert('You guessed it!');
-  console.log(guessNumber);
-  alert(failedAttempts + ' was guessed already');
-  break;
-} else if (guessNumber < computerChoice) {
+
+  if (guessNumber === computerChoice) {
+    alert('You guessed it!');
+    console.log(guessNumber);
+    alert(failedAttempts + ' was guessed already');
+    break;
+}  else if (guessNumber < computerChoice) {
   alert('Try Again!');
   failedAttempts.push(guessNumber);
   alert(failedAttempts + ' was guessed already');
@@ -69,7 +70,7 @@ for (var i = 1; i < 4; i++) {
   var guessNumber = prompt('Please pick another number between 1 and ' + guessNumber);
   continue;
 }
-}
+
 var userAnswers = [];
 var userGuess = prompt('Can you guess the state where I was born?');
 userAnswers.push(userGuess);

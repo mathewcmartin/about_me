@@ -1,13 +1,11 @@
 
 h1 {
-  display: block;
   text-align: center;
   font-family: Cambria;
   background-color: #999;
 }
 body {
   font-family: Cambria;
-  display: block;
   margin-left: 5%;
   margin-right: 5%;
   font-size: 1.5vw;
@@ -17,11 +15,19 @@ p.bdy {
   position: relative;
   margin-left: auto;
   text-align: left;
+  border-width: thick;
+  border: inset;
+  margin: auto;
+  padding: 2%;
 }
 img {
   max-width: 15%;
+}
+.boot  {
   display: block;
-  position: relative;
+}
+.gcm {
+  float: right;
 }
 ul {
   display: block;
@@ -30,7 +36,7 @@ ul {
   }
 p.ega {
   position: relative;
-}
+  }
 section {
   position: relative;
   padding: 10px;
