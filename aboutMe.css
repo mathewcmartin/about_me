@@ -1,53 +1,55 @@
 
-h1 {
+header {
+  position: fixed;
+}
+navigation-bar {
+  max-width: 100%;
+}
+.navigation-bar ul {
+  padding: 5px;
+  margin: 5px;
   text-align: center;
-  font-family: Cambria;
+  display: block;
+  vertical-align:top;
+  background-color: #000;
+  float: right;
+}
+h1 {
+  position: absolute;
+  display: inline-block;
+  text-align: center;
   background-color: #999;
 }
 body {
   font-family: Cambria;
-  margin-left: 5%;
-  margin-right: 5%;
   font-size: 1.5vw;
 }
-p.bdy {
-  display: block;
-  position: relative;
-  margin-left: auto;
-  text-align: left;
-  border-width: thick;
-  border: inset;
-  margin: auto;
-  padding: 2%;
+.bdy {
 }
 img {
-  max-width: 15%;
 }
-.boot  {
-  display: block;
+#boot  {
+  margin-left: 7%;
+  float: left;
+  clear: both;
+  max-width: 35%;
 }
-.gcm {
+#gcm {
   float: right;
+  margin-right: 7%;
+    max-width: 35%;
+}
+.h2 {
+  clear: both;
 }
 ul {
-  display: block;
-  background-color: inherit;
-  position: relative;
-  }
-p.ega {
-  position: relative;
-  }
+    }
+#ega {
+  position: block;
+  max-width: 5%;
+    }
 section {
-  position: relative;
-  padding: 10px;
-  border-color: #999;
-  border-top: 5px;
-  border-right: 5px;
-  border-bottom: 20px;
-  border-left: 20px;
 }
 footer {
-  display: block;
-  position: relative;
-  text-align: center;
+    text-align: center;
 }
