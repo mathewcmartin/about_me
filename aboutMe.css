@@ -1,12 +1,55 @@
-body {
-  font-family: sans-serif;
+
+header {
+  position: fixed;
 }
-p {
-  font-family: sans-serif;
-  margin-left: auto;
-  text-align: left;
-  }
+navigation-bar {
+  max-width: 100%;
+}
+.navigation-bar ul {
+  padding: 5px;
+  margin: 5px;
+  text-align: center;
+  display: block;
+  vertical-align:top;
+  background-color: #000;
+  float: right;
+}
+h1 {
+  position: absolute;
+  display: inline-block;
+  text-align: center;
+  background-color: #999;
+}
+body {
+  font-family: Cambria;
+  font-size: 1.5vw;
+}
+.bdy {
+}
+img {
+}
+#boot  {
+  margin-left: 7%;
+  float: left;
+  clear: both;
+  max-width: 35%;
+}
+#gcm {
+  float: right;
+  margin-right: 7%;
+    max-width: 35%;
+}
+.h2 {
+  clear: both;
+}
 ul {
-  font-family: sans-serif;
-  background-color: inherit;
-  }
+    }
+#ega {
+  position: block;
+  max-width: 5%;
+    }
+section {
+}
+footer {
+    text-align: center;
+}

@@ -1,5 +1,6 @@
 'use strict';
 
+
 function middleName() {
   var middleName = prompt('Can you guess if my middle name is Charles? \(Yes or No\)');
   middleName.toLowerCase();
@@ -107,3 +108,4 @@ function userGuess() {
     }
   }
 } userGuess();
+
