@@ -9,7 +9,7 @@ navigation-bar {
   padding: 5px;
   margin: 5px;
   text-align: center;
-  display: block;
+  display: inline;
   vertical-align:top;
   background-color: #000;
   float: right;
@@ -37,7 +37,8 @@ img {
 #gcm {
   float: right;
   margin-right: 7%;
-    max-width: 35%;
+  max-width: 35%;
+  /*clear:both;*/
 }
 .h2 {
   clear: both;
@@ -49,6 +50,8 @@ ul {
   max-width: 5%;
     }
 section {
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 footer {
     text-align: center;
