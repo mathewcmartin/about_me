@@ -13,6 +13,35 @@ body {
 #trout {
   float: right;
 }
+header {
+  position: relative;
+}
+navigation-bar {
+  max-width: 100%;
+}
+.navigation-bar ul {
+  padding: 5px;
+  margin: 5px;
+  text-align: center;
+  display: inline;
+  vertical-align:top;
+  background-color: #000;
+  float: right;
+}
+h1 {
+  position: absolute;
+  display: inline-block;
+  text-align: center;
+  background-color: #999;
+}
+body {
+  font-family: cursive, sans-serif;
+  font-size: 1.5vw;
+}
+.bdy {
+}
+img {
+}
 #boot  {
   margin-left: 7%;
   float: left;
@@ -30,6 +59,10 @@ body {
 #ega {
   position: block;
   max-width: 5%;
+    }
+section {
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 footer {
     text-align: center;
