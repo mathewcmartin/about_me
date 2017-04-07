@@ -2,13 +2,13 @@
 
 
 function middleName() {
-  var middleName = prompt('Can you guess if my middle name is Charles? \(Yes or No\)');
+  var middleName = prompt('Is my middle name is Charles? \(Yes or No\)');
   middleName.toLowerCase();
   if (middleName === 'no') {
-    alert('Wow, you guessed that my middle name is not Charles. It\'s actually Clifford.');
+    alert('You\'re right, my middle name is not Charles. It\'s actually Clifford.');
     console.log(middleName);
   } else {
-    alert('You are right, my middle name is actually Clifford.');
+    alert('My middle name is actually Clifford.');
     console.log(middleName);
   }
 } middleName();
@@ -16,7 +16,7 @@ function middleName() {
 function interests() {
   var interests = prompt('Can you guess if I\'m interested in coding?');
   if (interests.toLowerCase() === 'yes') {
-    alert('Nice, you guessed my primary interest is coding.');
+    alert('Nice, you guessed right, my primary interest is coding.');
     console.log(interests);
   } else {
     alert('Actually, my primary interest is coding.');
@@ -24,7 +24,7 @@ function interests() {
   }
 } interests();
 
-function functionName() {
+function miltaryBrat() {
   var interestingFact = prompt('Do you think I attended more than 5 public schools thru High School?');
   if (interestingFact.toLowerCase() === 'yes') {
     alert('You are good! I did attend more than 5 schools. I actually attended 6 schools as a \'military brat\' growing up.');
@@ -33,7 +33,7 @@ function functionName() {
     alert('Nope, it was 6 public schools. I was a military brat and moved quite a lot growing up.');
     console.log(interestingFact);
   }
-} functionName();
+} miltaryBrat();
 
 function careerGoals() {
   var careerGoals = prompt('Do you think my ideal job is that as a Cartographer?');
@@ -57,44 +57,28 @@ function focus(){
   }
 } focus();
 
-//
-function functionName() {
-  var failedAttempts = [];
-  var computerChoice = Math.floor((Math.random() * 10) + 1);
-  var guessNumber = prompt('Guess a number between 1 and 10.');
-  for (var i = 1; i < 4; i++) {
-    if (guessNumber === null) {
-      alert('You did not guess a number.');
-      console.log(guessNumber);
-      var guessNumber = prompt('Please guess a number.');
-      alert(failedAttempts + ' was guessed already');
-      continue;
-    } if (guessNumber === computerChoice) {
-      alert('You guessed it!');
-      console.log(guessNumber);
-      alert(failedAttempts + ' was guessed already');
-      break;
-    } else if (guessNumber < computerChoice) {
-      alert('Try Again!');
-      failedAttempts.push(guessNumber);
-      alert(failedAttempts + ' was guessed already');
-      var guessNumber = prompt('Please guess another number between ' + guessNumber + ' and 10');
-      continue;
-    } else if (guessNumber > computerChoice) {
-      alert('Try again! Pick another number between 1 and ' + guessNumber);
-      failedAttempts.push(guessNumber);
-      alert(failedAttempts + ' was guessed already');
-      var guessNumber = prompt('Please pick another number between 1 and ' + guessNumber);
-      continue;
+function guessTheNumber() {
+  for (var x = 1; x < 4; x++) {
+    var numberOfKids = prompt('Can you guess how many kids I have? Hint: It\'s less than a dozen and more than zero.');
+    var parseAnswer = parseInt(numberOfKids);
+    if (parseAnswer === 2) {
+      alert('Great guess! I do in fact have two awesome kids');
+    } else if (parseAnswer < 2) {
+      alert('Really close!');
+    } else if (parseAnswer > 2) {
+      alert('You\'re too high. A little lower');
+    } else {
+      alert('Your answer needs to be a number between 1 and 11.');
+      console.log('Bogus entry');
     }
   }
-} functionName();
+} guessTheNumber();
 
 function userGuess() {
   var userAnswers = [];
   var userGuess = prompt('Can you guess the state where I was born?');
   userAnswers.push(userGuess);
-  for (var i = 1; i < 6; i++) {
+  for (var i = 1; i < 50; i++) {
     console.log(i);
     if (userGuess.toLowerCase() === 'california') {
       alert('You are good! I was in fact born in California.');
@@ -108,4 +92,3 @@ function userGuess() {
     }
   }
 } userGuess();
-

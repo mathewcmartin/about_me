@@ -1,55 +1,39 @@
-
-header {
-  position: relative;
-}
-navigation-bar {
-  max-width: 100%;
-}
-.navigation-bar ul {
-  padding: 5px;
-  margin: 5px;
-  text-align: center;
-  display: block;
-  vertical-align:top;
-  background-color: #000;
-  float: right;
-}
-h1 {
-  position: absolute;
-  display: inline-block;
-  text-align: center;
-  background-color: #999;
-}
 body {
   font-family: Cambria;
-  font-size: 1.5vw;
+  font-size: 1em;
+  text-align: justify;
+  background: -moz-linear-gradient(270deg, rgba(255,0,0,1) 0%, rgba(255,255,0,1) 49%, rgba(255,0,0,1) 100%); /* ff3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255,0,0,1)), color-stop(49%, rgba(255,255,0,1)), color-stop(100%, rgba(255,0,0,1))); /* safari4+,chrome */
+  background: -webkit-linear-gradient(270deg, rgba(255,0,0,1) 0%, rgba(255,255,0,1) 49%, rgba(255,0,0,1) 100%); /* safari5.1+,chrome10+ */
+  background: -o-linear-gradient(270deg, rgba(255,0,0,1) 0%, rgba(255,255,0,1) 49%, rgba(255,0,0,1) 100%); /* opera 11.10+ */
+  background: -ms-linear-gradient(270deg, rgba(255,0,0,1) 0%, rgba(255,255,0,1) 49%, rgba(255,0,0,1) 100%); /* ie10+ */
+  background: linear-gradient(180deg, rgba(255,0,0,1) 0%, rgba(255,255,0,1) 49%, rgba(255,0,0,1) 100%); /* w3c */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FF0000', endColorstr='#ff0000',GradientType=0 ); /* ie6-9 */
 }
-.bdy {
-}
-img {
+#trout {
+  float: right;
 }
 #boot  {
   margin-left: 7%;
   float: left;
-  clear: both;
+  /*clear: both;*/
   max-width: 35%;
 }
 #gcm {
   float: right;
   margin-right: 7%;
-    max-width: 35%;
+  max-width: 35%;
 }
 .h2 {
   clear: both;
 }
-ul {
-    }
 #ega {
   position: block;
   max-width: 5%;
-    }
-section {
 }
 footer {
     text-align: center;
+}
+#legal {
+  font-size: .5em;
 }
