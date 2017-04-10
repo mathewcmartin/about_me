@@ -14,9 +14,9 @@ function middleName() {
 } middleName();
 
 function interests() {
-  var interests = prompt('Can you guess if I\'m interested in coding?');
+  var interests = prompt('Do you think I\'m interested in coding?');
   if (interests.toLowerCase() === 'yes') {
-    alert('Nice, you guessed right, my primary interest is coding.');
+    alert('Nice, you\'re right, my primary interest is coding.');
     console.log(interests);
   } else {
     alert('Actually, my primary interest is coding.');
@@ -30,8 +30,6 @@ function miltaryBrat() {
     alert('You are good! I did attend more than 5 schools. I actually attended 6 schools as a \'military brat\' growing up.');
     console.log(interestingFact);
   } else {
-    alert('Nope, it was 6 public schools. I was a military brat and moved quite a lot growing up.');
-    console.log(interestingFact);
   }
 } miltaryBrat();
 
@@ -57,33 +55,55 @@ function focus(){
   }
 } focus();
 
+  // for (var x = 1; x < 12; x++) {
+var userQuery = 'Can you guess how many kids I have? Hint: It\'s less than a dozen and more than zero.';
+// var turns = 11;
+
 function guessTheNumber() {
-  for (var x = 1; x < 4; x++) {
-    var numberOfKids = prompt('Can you guess how many kids I have? Hint: It\'s less than a dozen and more than zero.');
-    var parseAnswer = parseInt(numberOfKids);
-    if (parseAnswer === 2) {
-      alert('Great guess! I do in fact have two awesome kids');
-    } else if (parseAnswer < 2) {
-      alert('Really close!');
-    } else if (parseAnswer > 2) {
-      alert('You\'re too high. A little lower');
-    } else {
-      alert('Your answer needs to be a number between 1 and 11.');
-      console.log('Bogus entry');
-    }
+  // while (turns > 0) {
+  var guess = prompt(userQuery);
+  if (guess === 2);
+  console.log(guess);
+  // userQuery = Kids(userQuery);
+  if (guess == 2) {
+    alert('You guessed it right! I in fact have two awesome kids.');
+    cosole.log('equals == 2');
+    // turns = 0;
+  } else {
+    var hint = 'Sorry!';
+    if (guess < 2) hint += ' Really close! ';
+    if (guess > 2) hint += ' You\'re too high. A little lower ';
+    // turns = turns - 1;
+    console.log('sorry');
   }
-} guessTheNumber();
+}
+guessTheNumber();
+  //   var guess = prompt();
+  //   var parseAnswer = parseInt(numberOfKids);
+  //   if (parseAnswer === 2) {
+  //     alert('Great guess! I do in fact have two awesome kids');
+  //     console.log('If statement');
+  //   } else if (parseAnswer < 2) {
+  //     alert('Really close!');
+  //   } else if (parseAnswer > 2) {
+  //     alert('You\'re too high. A little lower');
+  //   } else if (parseAnswer !== 2 ) {
+  //     alert('Your answer needs to be a number between 1 and 11.');
+  //     console.log('Bogus entry');
+  //   }
+  // }
+// }
 
 function userGuess() {
   var userAnswers = [];
-  var userGuess = prompt('Can you guess the state where I was born?');
+  var userGuess = prompt('Guess three of states where I\'ve lived?');
   userAnswers.push(userGuess);
   for (var i = 1; i < 50; i++) {
     console.log(i);
     if (userGuess.toLowerCase() === 'california') {
       alert('You are good! I was in fact born in California.');
       console.log(userGuess);
-      break;
+      return;
     } else if (userGuess.toLowerCase() !== 'california') {
       alert('Sorry, try again!');
       console.log(userGuess);
